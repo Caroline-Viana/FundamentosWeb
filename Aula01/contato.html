@@ -4,38 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f15116d8cf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Contato</title>
 </head>
 <body>
-    <ul>
+    <ul class="menu">
         <li><a href="./index.html">Home</a></li>
         <li><a href="./contato.html">Contato</a></li>
     </ul>
+    <h1 class="center center_titulo">Entre em contato comigo</h1>
+    <div class="secao">
+        <div class="secao_item">
+            
+            <form class="formulario">
+                <div class="fomulario_campo">
+                    <label for="nome" class="descricao">Nome</label>
+                    <input type="text" id="nome" class="campo">
+                </div>
+                <div class="fomulario_campo">
+                    <label for="email" class="descricao">E-mail</label>
+                    <input type="email" id="email" class="campo">
+                </div>
+                <div class="fomulario_campo">
+                    <label for="assunto" class="descricao">Assunto</label>
+                    <textarea name="assunto" id="assunto" cols="60" rows="5" class="campo"></textarea>
+                </div>
+                <button class="botao">Enviar</button>
+            </form>
+        </div>
+        <div class="secao_item">
+            <div class="container_endereco">
+                <div>
+                    <p class="text">B3 - Brasil, Bolsa, Balcão</p>
+                    <p class="text">Rua Quinze de Novembro - Centro Histórico de São Paulo, São Paulo - SP</p>
+                </div>
+                <div class="container_mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.61381335275!2d-46.63474815457737!3d-23.546388505226727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6c02a6f18329%3A0x3b11861bc1ff4116!2sB3%20-%20Brasil%2C%20Bolsa%2C%20Balc%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1680632223573!5m2!1spt-BR!2sbr" class="mapa" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <h1>Entre em contato comigo</h1>
-
-    <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome">
-        <br>
-        <br>
-        <label for="email">E-mail:</label>
-        <input type="email" id="email">
-        <br>
-        <br>
-        <label for="assunto">Assunto:</label>
-        <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-        <br>
-        <br>
-    </form>
-
-    <h2>Endereço:</h2>
-
-    <p>B3 - Brasil, Bolsa, Balcão</p>
-
-    <p>Rua Quinze de Novembro - Centro Histórico de São Paulo, São Paulo - SP</p>
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.61381335275!2d-46.63474815457737!3d-23.546388505226727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6c02a6f18329%3A0x3b11861bc1ff4116!2sB3%20-%20Brasil%2C%20Bolsa%2C%20Balc%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1680632223573!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <hr>
     
+    <footer>
+        <p class="center">
+            Todos os direitos reservados a HEART Anthology &copy;
+        </p>
+        <div class="icones">
+            <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fwww.webtoons.com%252Fen%252Fheartwarming%252Fheart-anthology%252Flist%253Ftitle_no%253D2191&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=pt_BR"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/intent/tweet?text=Reading%20%23HEART_Anthology%20made%20my%20day%20better.%0A%20https%3A%2F%2Fwww.webtoons.com%2Fen%2Fheartwarming%2Fheart-anthology%2Flist%3Ftitle_no%3D2191%20%23WEBTOON"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.tumblr.com/widgets/share/tool/preview?shareSource=legacy&canonicalUrl=&url=https%3A%2F%2Fwww.webtoons.com%2Fen%2Fheartwarming%2Fheart-anthology%2Flist%3Ftitle_no%3D2191&posttype=link&title=HEART+Anthology&caption=Featuring+stories+from+the+2020+Short+Story+Contest%21++From+wholesome+stories+to+tearjerkers%2C+are+you+ready+to+catch+these+feelings%3F+New+stories+released+every+Wednesday.%0AReading+this+will+make+your+day+better.+%23HEART+Anthology+%23webcomic+%23WEBTOON&content=https%3A%2F%2Fwww.webtoons.com%2Fen%2Fheartwarming%2Fheart-anthology%2Flist%3Ftitle_no%3D2191"><i class="fa-brands fa-tumblr"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
