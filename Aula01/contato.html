@@ -24,17 +24,20 @@
             <form class="formulario">
                 <div class="fomulario_campo">
                     <label for="nome" class="descricao">Nome</label>
-                    <input type="text" id="nome" class="campo">
+                    <input type="text" id="nome" class="campo" onkeyup="validaNome()">
+                    <div id="txtNome"></div>
                 </div>
                 <div class="fomulario_campo">
                     <label for="email" class="descricao">E-mail</label>
-                    <input type="email" id="email" class="campo">
+                    <input type="email" id="email" class="campo" onkeyup="validaEmail()">
+                    <div id="txtEmail"></div>
                 </div>
                 <div class="fomulario_campo">
                     <label for="assunto" class="descricao">Assunto</label>
-                    <textarea name="assunto" id="assunto" cols="60" rows="5" class="campo"></textarea>
+                    <textarea name="assunto" id="assunto" cols="60" rows="5" class="campo" onkeyup="validaAssunto()"></textarea>
+                    <div id="txtAssunto"></div>
                 </div>
-                <button class="botao">Enviar</button>
+                <button class="botao" onclick="enviar()">Enviar</button>
             </form>
         </div>
         <div class="secao_item">
@@ -44,7 +47,7 @@
                     <p class="text">Rua Quinze de Novembro - Centro Histórico de São Paulo, São Paulo - SP</p>
                 </div>
                 <div class="container_mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.61381335275!2d-46.63474815457737!3d-23.546388505226727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6c02a6f18329%3A0x3b11861bc1ff4116!2sB3%20-%20Brasil%2C%20Bolsa%2C%20Balc%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1680632223573!5m2!1spt-BR!2sbr" class="mapa" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.61381335275!2d-46.63474815457737!3d-23.546388505226727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6c02a6f18329%3A0x3b11861bc1ff4116!2sB3%20-%20Brasil%2C%20Bolsa%2C%20Balc%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1680632223573!5m2!1spt-BR!2sbr" class="mapa" id="mapa" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -62,5 +65,6 @@
             <a href="https://www.tumblr.com/widgets/share/tool/preview?shareSource=legacy&canonicalUrl=&url=https%3A%2F%2Fwww.webtoons.com%2Fen%2Fheartwarming%2Fheart-anthology%2Flist%3Ftitle_no%3D2191&posttype=link&title=HEART+Anthology&caption=Featuring+stories+from+the+2020+Short+Story+Contest%21++From+wholesome+stories+to+tearjerkers%2C+are+you+ready+to+catch+these+feelings%3F+New+stories+released+every+Wednesday.%0AReading+this+will+make+your+day+better.+%23HEART+Anthology+%23webcomic+%23WEBTOON&content=https%3A%2F%2Fwww.webtoons.com%2Fen%2Fheartwarming%2Fheart-anthology%2Flist%3Ftitle_no%3D2191"><i class="fa-brands fa-tumblr"></i></a>
         </div>
     </footer>
+    <script src="./js/formulario.js"></script>
 </body>
 </html>
